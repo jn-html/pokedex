@@ -276,9 +276,43 @@ render(){
                                 <div className="progess">
                                     <div
                                     className="progress-bar"
+                                    role="progressbar"
+                                    style={{
+                                        width:`${this.state.stat.defense}%`,
+                                        backgroundColor: `#${this.state.themeColor}`
+                                    }}
+                                    aria-valuenow ="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    >
+                                        <small>{this.state.stats.defense}</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div className="row align-itel-center">
+                            <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                Speed
+                            </div>
+                            <div className={`col-12 col-md-${this.state.stateBarWidth}`}>
+                                <div className="progress">
+                                    <div
+                                    className="progress-bar"
+                                    role="progressbar"
+                                    style={{
+                                        width: `${this.state.speed}%`,
+                                        backgroundColor: `#${this.state.themeColor}`
+                                    }}
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    >
+                                        <small>{this.state.stats.speed}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        ****************************
                     </div>
                 </div>
             </div>
