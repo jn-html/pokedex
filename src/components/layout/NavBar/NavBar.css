@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #ef5350;
+    width: 23%;
+    border: 2px solid limegreen;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 55%;
+    margin-left: 39%;
+    opacity: 0.4;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
