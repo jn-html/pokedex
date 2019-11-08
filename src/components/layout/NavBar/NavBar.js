@@ -20,7 +20,7 @@ state = {
 
 hoverNavBar() {
 window.scrolly <= 0
-    ?this.setState ({hoverNavBar:flase})
+    ?this.setState ({hoverNavBar:false})
     :this.setState ({hoverNavBar: true});
 };
 
