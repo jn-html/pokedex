@@ -312,11 +312,123 @@ render(){
                                 </div>
                             </div>
                         </div>
-                        ****************************
+                        <div className="row-align-items-center">
+                            <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                Sp Atk
+                            </div>
+                            <div className={`col-12 col-md-${this.stateBarWidth}`}>
+                                <div className="progress-bar"
+                                role="progressbar"
+                                style={{
+                                    width:`${this.state.specialAttack}%`,
+                                    backgroundColor:`#${this.state.themeColor}`
+                                }}
+                                aria-valuenow ={this.state.stats.specialAttack}
+                                aria-valuemin ="0"
+                                aria-valuemax="100"
+                                >
+                                    <small>{this.state.specialAttack}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row align-items-center">
+                        <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                            Sp Def
+                        </div>
+                        <div className={`col-12 col-md-${this.state.stateBarWidth}`}>
+                            <div className="progress-bar"
+                            role = "progressbar"
+                            style={{
+                                width:`${this.state.stats.specialDefense}%`,
+                                backgroundColor:`#${this.state.specialDefense}`
+                            }}
+                            aria-valuenow ={this.state.stats.specialDefense}
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            >
+                                <small>{this.state.stats.specialdefense}</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        <div className="row mt-1">
+            <div className="col">
+            <p className="">{this.state.description}</p>
+            </div>
         </div>
+    </div>
+    <hr />
+    <div className="card-body">
+        <h5 className="card-title-text-center">Profile</h5>
+        <div className="row">
+            <div className="col-md-6">
+                <div className="row">
+                    <div className="col-6">
+                        <h6 className="float-right">Height:</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-left">{this.state.height} ft.</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-right">Weight:</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-left">{this.state.weight} lbs</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-right">Catch Rate:</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-left">{this.state.catchRate}</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-right">Gender Ratio</h6>
+                    </div>
+                    <div className="col-6">
+                        <div className="progress">
+                        <div className="progress-bar"
+                        role="progressbar"
+                        style ={{
+                            width:`${this.state.genderRatioFemale}%`,
+                            backgroundColor: '#c2185b'
+                        }}
+                        aria-valuenow="15"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        >
+                            <small>{this.state.genderRatioFemale}</small>
+                        </div>
+                        <div className="progress-bar"
+                        role="progressbar"
+                        style = {{
+                            width:`${this.state.genderRatioMale}%`,
+                            backgroundColor: "#1976d2"
+                        }}
+                        aria-valuenow="30"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        >
+                            <small>{this.state.genderRatioMale}</small>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-6">
+                <div className="row">
+                    <div className="col-6">
+                        <h6 className="float-right">Egg Groups:</h6>
+                    </div>
+                    <div className="col-6">
+                        <h6 className="float-left">{this.state.eggGroups}</h6>
+                    </div>
+                    **************************************************
+                </div>
+            </div>
+        </div>
+    </div>
     )
 }
 
