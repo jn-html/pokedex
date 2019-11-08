@@ -1,0 +1,21 @@
+.pokedex {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: #fafafa;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #ef5350 !important;
+  }
+  
+  body {
+    background-color: transparent !important;
+  }
+  
+  .col {
+    margin-top: 4rem;
+  }
+  
+  
