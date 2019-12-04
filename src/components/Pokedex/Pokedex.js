@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Pokedex.css';
-import backgroundImage from './pattern.png';
+import backgroundImage from './pokeballs_pattern.gif';
 import NavBar from '../layout/NavBar/NavBar';
 import Dashboard from '../layout/Dashboard';
 import Pokemon from '../Pokemon/Pokemon';

@@ -21,6 +21,7 @@ const Card = styled.div`
   -ms-user-select: none;
   user-select: none;
   -o-user-select: none;
+  background-color: lightgrey;
 `;
 
 const StyledLink = styled(Link)`
